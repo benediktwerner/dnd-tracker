@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dnd-tracker/static/css/main.aa5095c3.chunk.css",
-    "main.js": "/dnd-tracker/static/js/main.ba5813b3.chunk.js",
-    "main.js.map": "/dnd-tracker/static/js/main.ba5813b3.chunk.js.map",
+    "main.js": "/dnd-tracker/static/js/main.e160551e.chunk.js",
+    "main.js.map": "/dnd-tracker/static/js/main.e160551e.chunk.js.map",
     "runtime-main.js": "/dnd-tracker/static/js/runtime-main.686b6e75.js",
     "runtime-main.js.map": "/dnd-tracker/static/js/runtime-main.686b6e75.js.map",
     "static/js/2.ce29475e.chunk.js": "/dnd-tracker/static/js/2.ce29475e.chunk.js",
     "static/js/2.ce29475e.chunk.js.map": "/dnd-tracker/static/js/2.ce29475e.chunk.js.map",
     "index.html": "/dnd-tracker/index.html",
-    "precache-manifest.2e3cf5817f69ee0a82bfb2bf8be383ab.js": "/dnd-tracker/precache-manifest.2e3cf5817f69ee0a82bfb2bf8be383ab.js",
+    "precache-manifest.a52c4a02a19051d839e9a36bb7cc416e.js": "/dnd-tracker/precache-manifest.a52c4a02a19051d839e9a36bb7cc416e.js",
     "service-worker.js": "/dnd-tracker/service-worker.js",
     "static/css/main.aa5095c3.chunk.css.map": "/dnd-tracker/static/css/main.aa5095c3.chunk.css.map",
     "static/js/2.ce29475e.chunk.js.LICENSE.txt": "/dnd-tracker/static/js/2.ce29475e.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.686b6e75.js",
     "static/js/2.ce29475e.chunk.js",
     "static/css/main.aa5095c3.chunk.css",
-    "static/js/main.ba5813b3.chunk.js"
+    "static/js/main.e160551e.chunk.js"
   ]
 }
