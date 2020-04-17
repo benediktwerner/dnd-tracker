@@ -4,7 +4,7 @@ import './App.css';
 class ValueButton extends React.Component {
   updateVal(amount) {
     this.props.app.state.characters[this.props.i][this.props.name.toLowerCase()] += amount;
-    this.updateCharacters();
+    this.props.app.updateCharacters();
   }
 
   render() {
@@ -84,7 +84,7 @@ class App extends React.Component {
         <button className="fab" onClick={() => this.addPlayer()}>
           +
         </button>
-        <p className="version-number">v0.3</p>
+        <p className="version-number">v0.4</p>
       </>
     );
   }
