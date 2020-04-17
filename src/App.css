@@ -79,3 +79,10 @@
     justify-content: center;
   }
 }
+
+.version-number {
+  position: fixed;
+  opacity: 10%;
+  bottom: 10px;
+  left: 10px;
+}

@@ -4,7 +4,7 @@ import './App.css';
 class ValueButton extends React.Component {
   updateVal(amount) {
     this.props.app.state.characters[this.props.i][this.props.name.toLowerCase()] += amount;
-    this.props.app.setState({ characters: this.props.app.state.characters });
+    this.updateCharacters();
   }
 
   render() {
@@ -37,16 +37,18 @@ class App extends React.Component {
   componentWillMount() {
     let characters = localStorage.getItem('characters');
     if (characters) this.setState({ characters: JSON.parse(characters) });
-    window.addEventListener('beforeunload', () => {
-      localStorage.setItem('characters', JSON.stringify(this.state.characters));
-    });
   }
 
   removePlayer(i) {
     if (window.confirm('Are you sure?')) {
       this.state.characters.splice(i, 1);
-      this.setState({ characters: this.state.characters });
+      this.updateCharacters();
     }
+  }
+
+  updateCharacters() {
+    this.setState({ characters: this.state.characters });
+    localStorage.setItem('characters', JSON.stringify(this.state.characters));
   }
 
   renderCharacters() {
@@ -67,7 +69,7 @@ class App extends React.Component {
     let name = prompt('Player name:');
     if (!name) return;
     this.state.characters.push({ name, hp: 0, gold: 0 });
-    this.setState({ characters: this.state.characters });
+    this.updateCharacters();
   }
 
   render() {
@@ -82,6 +84,7 @@ class App extends React.Component {
         <button className="fab" onClick={() => this.addPlayer()}>
           +
         </button>
+        <p className="version-number">v0.3</p>
       </>
     );
   }
